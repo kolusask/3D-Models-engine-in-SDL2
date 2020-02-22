@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Engine3D.dir/main.cpp.o CMakeFiles/Engine3D.dir/src/Point.cpp.o CMakeFiles/Engine3D.dir/src/Drawable.cpp.o CMakeFiles/Engine3D.dir/src/Model.cpp.o CMakeFiles/Engine3D.dir/src/Session.cpp.o CMakeFiles/Engine3D.dir/src/Line.cpp.o CMakeFiles/Engine3D.dir/src/Component.cpp.o CMakeFiles/Engine3D.dir/src/FileReader.cpp.o  -o Engine3D -lSDL2 

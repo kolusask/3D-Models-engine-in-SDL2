@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Engine3D"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/askar/CPP/E3D/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/askar/CPP/E3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/askar/CPP/E3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/askar/CPP/E3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/askar/CPP/E3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/askar/CPP/E3D/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/askar/CPP/E3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/askar/CPP/E3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/askar/CPP/E3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/askar/CPP/E3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Engine3D">
+				<Option output="/home/askar/CPP/E3D/cmake-build-debug/Engine3D" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/askar/CPP/E3D/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/askar/CPP/E3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 Engine3D"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/askar/CPP/E3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/askar/CPP/E3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/askar/CPP/E3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Engine3D/fast">
+				<Option output="/home/askar/CPP/E3D/cmake-build-debug/Engine3D" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/askar/CPP/E3D/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/askar/CPP/E3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 Engine3D/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/askar/CPP/E3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/askar/CPP/E3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/askar/CPP/E3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/askar/CPP/E3D/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/askar/CPP/E3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/askar/CPP/E3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/askar/CPP/E3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/askar/CPP/E3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/askar/CPP/E3D/incl/Component.h">
+			<Option target="Engine3D"/>
+		</Unit>
+		<Unit filename="/home/askar/CPP/E3D/incl/Drawable.h">
+			<Option target="Engine3D"/>
+		</Unit>
+		<Unit filename="/home/askar/CPP/E3D/incl/FileReader.h">
+			<Option target="Engine3D"/>
+		</Unit>
+		<Unit filename="/home/askar/CPP/E3D/incl/Line.h">
+			<Option target="Engine3D"/>
+		</Unit>
+		<Unit filename="/home/askar/CPP/E3D/incl/Model.h">
+			<Option target="Engine3D"/>
+		</Unit>
+		<Unit filename="/home/askar/CPP/E3D/incl/Point.h">
+			<Option target="Engine3D"/>
+		</Unit>
+		<Unit filename="/home/askar/CPP/E3D/incl/Session.h">
+			<Option target="Engine3D"/>
+		</Unit>
+		<Unit filename="/home/askar/CPP/E3D/incl/constants.h">
+			<Option target="Engine3D"/>
+		</Unit>
+		<Unit filename="/home/askar/CPP/E3D/main.cpp">
+			<Option target="Engine3D"/>
+		</Unit>
+		<Unit filename="/home/askar/CPP/E3D/src/Component.cpp">
+			<Option target="Engine3D"/>
+		</Unit>
+		<Unit filename="/home/askar/CPP/E3D/src/Drawable.cpp">
+			<Option target="Engine3D"/>
+		</Unit>
+		<Unit filename="/home/askar/CPP/E3D/src/FileReader.cpp">
+			<Option target="Engine3D"/>
+		</Unit>
+		<Unit filename="/home/askar/CPP/E3D/src/Line.cpp">
+			<Option target="Engine3D"/>
+		</Unit>
+		<Unit filename="/home/askar/CPP/E3D/src/Model.cpp">
+			<Option target="Engine3D"/>
+		</Unit>
+		<Unit filename="/home/askar/CPP/E3D/src/Point.cpp">
+			<Option target="Engine3D"/>
+		</Unit>
+		<Unit filename="/home/askar/CPP/E3D/src/Session.cpp">
+			<Option target="Engine3D"/>
+		</Unit>
+		<Unit filename="/home/askar/CPP/E3D/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
