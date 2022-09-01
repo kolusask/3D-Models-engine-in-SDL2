@@ -45,9 +45,9 @@ void Session::run() {
                     break;
                     case SDLK_i: mModel->move(COORD_Z, -MOVE_DIST);
                     break;
-                    case SDLK_j: mModel->move(COORD_X, MOVE_DIST);
+                    case SDLK_j: mModel->move(COORD_X, -MOVE_DIST);
                     break;
-                    case SDLK_l: mModel->move(COORD_X, -MOVE_DIST);
+                    case SDLK_l: mModel->move(COORD_X, MOVE_DIST);
                     break;
                     case SDLK_u: mModel->move(COORD_Y, MOVE_DIST);
                     break;
@@ -84,6 +84,6 @@ void Session::quit_graphics() {
 void Session::refresh() {
     SDL_SetRenderDrawColor(mRenderer, 0x00, 0x00, 0x00, 0x00);
     SDL_RenderClear(mRenderer);
-    mModel->draw();
+    mModel->render();
     SDL_RenderPresent(mRenderer);
 }

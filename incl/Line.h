@@ -23,7 +23,7 @@ public:
     double distance() const override;
     std::shared_ptr<Point> endpoint_1();
     std::shared_ptr<Point> endpoint_2();
-    void draw() const override;
+    void render() const override;
 
 private:
     std::shared_ptr<Point> mEndpoint1;

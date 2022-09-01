@@ -10,7 +10,7 @@ enum Coordinate { COORD_X, COORD_Y, COORD_Z };
 
 class Drawable {
 public:
-    virtual void draw() const = 0;
+    virtual void render() const = 0;
 
 protected:
     explicit Drawable(SDL_Renderer* renderer = nullptr);

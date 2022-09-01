@@ -62,10 +62,10 @@ void Model::add(std::shared_ptr<Point> p1, std::shared_ptr<Point> p2) {
     mComponents.push_back(std::make_shared<Line>(p1, p2));
 }
 
-void Model::draw() const {
+void Model::render() const {
     calculate_distances();
     for (auto& comp : mComponents)
-        comp->draw();
+        comp->render();
 }
 
 void Model::move(const Coordinate coord, const double dist) {

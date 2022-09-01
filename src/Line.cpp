@@ -23,7 +23,7 @@ double Line::distance() const {
     return mDistance = (mEndpoint1->distance() + mEndpoint2->distance()) / 2;
 }
 
-void Line::draw() const {
+void Line::render() const {
     if (mEndpoint1->visible() || mEndpoint2->visible()) {
         auto brightness = static_cast<uint8_t>(this->brightness() / 3 + 0x2B);
         SDL_SetRenderDrawColor(sRenderer, brightness, brightness, brightness, brightness);

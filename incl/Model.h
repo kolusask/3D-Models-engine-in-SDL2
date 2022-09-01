@@ -27,7 +27,7 @@ public:
     void add(std::shared_ptr<Point> p1, std::shared_ptr<Point> p2);
 
     // overrode from Drawable
-    void draw() const override;
+    void render() const override;
     void move(Coordinate coord, double dist);
     void rotate(Coordinate Coordinate, double angle);
 

@@ -38,10 +38,12 @@ double Point::distance() const {
     return mDistance = mY;
 }
 
-void Point::draw() const {
-    uint8_t brightness = this->brightness();
-    SDL_SetRenderDrawColor(sRenderer, brightness, brightness, brightness, 0xFF);
-    SDL_RenderDrawPoint(sRenderer, mPlaneX, mPlaneY);
+void Point::render() const {
+    if (visible()) {
+        uint8_t brightness = this->brightness();
+        SDL_SetRenderDrawColor(sRenderer, brightness, brightness, brightness, 0xFF);
+        SDL_RenderDrawPoint(sRenderer, mPlaneX, mPlaneY);
+    }
 }
 
 void Point::move(const Coordinate coord, const double dist) {

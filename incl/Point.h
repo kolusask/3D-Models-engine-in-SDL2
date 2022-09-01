@@ -20,7 +20,7 @@ public:
     int plane_y() const;
     ComponentType type() const override;
     double distance() const override;
-    void draw() const override;
+    void render() const override;
     void move(Coordinate coord, double dist);
     void rotate(Coordinate Coordinate, double angle);
     bool operator==(const std::shared_ptr<Point>& other) const override;
