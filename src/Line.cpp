@@ -24,13 +24,15 @@ double Line::distance() const {
 }
 
 void Line::draw() const {
-    auto brightness = static_cast<uint8_t>(this->brightness() / 3 + 0x2B);
-    SDL_SetRenderDrawColor(sRenderer, brightness, brightness, brightness, brightness);
-    SDL_RenderDrawLine(sRenderer,
-                       mEndpoint1->plane_x(),
-                       mEndpoint1->plane_y(),
-                       mEndpoint2->plane_x(),
-                       mEndpoint2->plane_y());
+    if (mEndpoint1->visible() || mEndpoint2->visible()) {
+        auto brightness = static_cast<uint8_t>(this->brightness() / 3 + 0x2B);
+        SDL_SetRenderDrawColor(sRenderer, brightness, brightness, brightness, brightness);
+        SDL_RenderDrawLine(sRenderer,
+                        mEndpoint1->plane_x(),
+                        mEndpoint1->plane_y(),
+                        mEndpoint2->plane_x(),
+                        mEndpoint2->plane_y());
+    }
 }
 
 bool Line::operator==(const std::shared_ptr<Point>& other) const {

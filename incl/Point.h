@@ -24,6 +24,7 @@ public:
     void move(Coordinate coord, double dist);
     void rotate(Coordinate Coordinate, double angle);
     bool operator==(const std::shared_ptr<Point>& other) const override;
+    bool visible() const;
 
 private:
     static void rotate_in_2d(double& x, double& y, double phi);

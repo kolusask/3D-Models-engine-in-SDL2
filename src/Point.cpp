@@ -24,6 +24,10 @@ bool Point::operator==(const std::shared_ptr<Point>& other) const {
             (mZ - other->mZ) * (mZ - other->mZ)) < sDiffLimit;
 }
 
+bool Point::visible() const {
+    return mY < 0;
+}
+
 int Point::plane_x() const { return mPlaneX; }
 
 int Point::plane_y() const { return mPlaneY; }
