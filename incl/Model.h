@@ -2,8 +2,7 @@
 // Created by askar on 10.09.19.
 //
 
-#ifndef ENGINE3D_MODEL_H
-#define ENGINE3D_MODEL_H
+#pragma once
 
 #include <algorithm>
 #include <limits>
@@ -21,6 +20,7 @@ class Model : public Drawable {
 public:
     Model(const Model& other);
     explicit Model(SDL_Renderer* renderer);
+
     void set(const Model& other);
     void add(double x, double y, double z);
     void add(const std::shared_ptr<Line>& line);
@@ -29,16 +29,16 @@ public:
     // overrode from Drawable
     void draw() const override;
     void move(Coordinate coord, double dist);
-    void turn(Coordinate Coordinate, double angle);
+    void rotate(Coordinate Coordinate, double angle);
+
 private:
     void calculate_distances() const;
     template<typename T>
     void add_as(const std::shared_ptr<Component>& comp) {
         mComponents.push_back(std::make_shared<T>(*std::dynamic_pointer_cast<T>(comp)));
     }
+
     std::vector<std::shared_ptr<Component>> mComponents;
     std::vector<std::shared_ptr<Point>> mPoints;
+
 };
-
-
-#endif //ENGINE3D_MODEL_H

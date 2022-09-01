@@ -3,20 +3,11 @@
 
 #include "incl/Session.h"
 
-const char* construct_address(char* arg) {
-    if (!arg)
-        return "../Models/cube.3de";
-    if (arg[0] == '/')
-        return arg;
-    char* result = new char[strlen(arg) + 4];
-    sprintf(result, "../%s", arg);
-    return result;
-}
-
 int main(int argc, char* args[]) {
     try {
-        auto str = construct_address(args[1]);
-        Session s(construct_address(args[1]));
+        const char* path = argc == 2 ? args[1] : "Models/cube.3de";
+        std::cout << path << std::endl;
+        Session s(path);
         s.run();
     } catch (std::exception& e) {
         std::cout << e.what() << std::endl;

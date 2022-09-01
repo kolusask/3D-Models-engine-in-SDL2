@@ -26,19 +26,18 @@ void Session::run() {
                 return;
             case SDL_KEYDOWN:
                 switch(event.key.keysym.sym) {
-
-                    // Turn
-                    case SDLK_w: mModel->turn(COORD_X, ROT_ANGLE);
+                    // rotate
+                    case SDLK_w: mModel->rotate(COORD_X, ROT_ANGLE);
                     break;
-                    case SDLK_s: mModel->turn(COORD_X, -ROT_ANGLE);
+                    case SDLK_s: mModel->rotate(COORD_X, -ROT_ANGLE);
                     break;
-                    case SDLK_d: mModel->turn(COORD_Z, ROT_ANGLE);
+                    case SDLK_d: mModel->rotate(COORD_Z, ROT_ANGLE);
                     break;
-                    case SDLK_a: mModel->turn(COORD_Z, -ROT_ANGLE);
+                    case SDLK_a: mModel->rotate(COORD_Z, -ROT_ANGLE);
                     break;
-                    case SDLK_q: mModel->turn(COORD_Y, ROT_ANGLE);
+                    case SDLK_q: mModel->rotate(COORD_Y, ROT_ANGLE);
                     break;
-                    case SDLK_e: mModel->turn(COORD_Y, -ROT_ANGLE);
+                    case SDLK_e: mModel->rotate(COORD_Y, -ROT_ANGLE);
                     break;
 
                     // Move
@@ -56,9 +55,10 @@ void Session::run() {
                     break;
 
                     // Controls
-                    case SDLK_ESCAPE: return;
+                    case SDLK_ESCAPE:
+                        return;
                     case SDLK_SPACE: mModel->set(*mStartModel);
-                    break;
+                        break;
                     default:
                         break;
                 }

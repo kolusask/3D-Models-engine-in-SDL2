@@ -5,7 +5,7 @@
 #include "../incl/FileReader.h"
 
 FileReader::FileReader(const char *fileName, std::shared_ptr<Model>& model)
-    :  mLineCount(0), mModelFile(fileName), mModel(model) {
+    :  mModelFile(fileName), mModel(model), mLineCount(0) {
     if (mModelFile.fail())
         throw NoFileException();
     read();

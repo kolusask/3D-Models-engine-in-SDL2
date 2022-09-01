@@ -13,7 +13,7 @@ Model::Model(SDL_Renderer* renderer) : Drawable(renderer) {}
 void Model::set(const Model& other) {
     mComponents.clear();
     for (auto& comp : other.mComponents) {
-        switch(comp->get_type()) {
+        switch(comp->type()) {
             case TYPE_POINT:
                 add_as<Point>(comp);
                 break;
@@ -36,7 +36,7 @@ void Model::add(const double x, const double y, const double z) {
 }
 
 void Model::add(const std::shared_ptr<Line>& line) {
-    this->add(line->get_start(), line->get_end());
+    this->add(line->endpoint_1(), line->endpoint_2());
 }
 
 void Model::add(std::shared_ptr<Point> p1, std::shared_ptr<Point> p2) {
@@ -74,15 +74,15 @@ void Model::move(const Coordinate coord, const double dist) {
     Point::release();
 }
 
-void Model::turn(const Coordinate Coordinate, const double angle) {
+void Model::rotate(const Coordinate Coordinate, const double angle) {
     for (auto& point : mPoints)
-        point->turn(Coordinate, angle);
+        point->rotate(Coordinate, angle);
 }
 
 void Model::calculate_distances() const {
     std::list<double> distances;
     for (auto& comp : mComponents)
-        distances.push_back(comp->get_distance());
+        distances.push_back(comp->distance());
     Component::sRangeMin = *std::min_element(distances.begin(), distances.end());
     Component::sRangeMax = *std::max_element(distances.begin(), distances.end());
     Component::sRange = Component::sRangeMax - Component::sRangeMin;

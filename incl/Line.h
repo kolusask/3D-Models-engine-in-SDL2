@@ -2,8 +2,7 @@
 // Created by askar on 11.09.19.
 //
 
-#ifndef ENGINE3D_LINE_H
-#define ENGINE3D_LINE_H
+#pragma once
 
 #include <memory>
 #include <SDL2/SDL.h>
@@ -18,16 +17,16 @@ public:
     Line(const Line& other);
     Line(std::shared_ptr<Point>& p1, std::shared_ptr<Point>& p2);
     Line(double p1x, double p1y, double p1z, double p2x, double p2y, double p2z);
+
     bool operator==(const std::shared_ptr<Point>& point) const override;
-    ComponentType get_type() const override;
-    double get_distance() const override;
-    std::shared_ptr<Point> get_start();
-    std::shared_ptr<Point> get_end();
+    ComponentType type() const override;
+    double distance() const override;
+    std::shared_ptr<Point> endpoint_1();
+    std::shared_ptr<Point> endpoint_2();
     void draw() const override;
+
 private:
-    std::shared_ptr<Point> mStart;
-    std::shared_ptr<Point> mEnd;
+    std::shared_ptr<Point> mEndpoint1;
+    std::shared_ptr<Point> mEndpoint2;
+
 };
-
-
-#endif //ENGINE3D_LINE_H

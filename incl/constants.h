@@ -2,8 +2,7 @@
 // Created by askar on 10.09.19.
 //
 
-#ifndef ENGINE3D_CONSTANTS_H
-#define ENGINE3D_CONSTANTS_H
+#pragma once
 
 // Screen dimensions
 #define WIDTH 600
@@ -26,5 +25,3 @@
                         //  when commented out, the neighboring points are united.
 #define PRECISION 20    // When Fast loading is disabled, affects the distance at which the neighboring points
                         //  are united.
-
-#endif //ENGINE3D_CONSTANTS_H

@@ -6,7 +6,7 @@
 
 double Component::sRangeMin, Component::sRangeMax, Component::sRange;
 
-uint8_t Component::calculate_brightness() const {
+uint8_t Component::brightness() const {
     double brightness = (mDistance - sRangeMin) / sRange;
     return uint8_t(64 + 191 * brightness);
 }
