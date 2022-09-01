@@ -95,6 +95,6 @@ void Point::rotate(const Coordinate Coordinate, const double angle) {
 }
 
 void Point::project_to_plane() {
-    mPlaneX = int(WIDTH / 2 + mX * UNIT_SIZE * exp(mY / PERSPECTIVE));
-    mPlaneY = int(HEIGHT / 2 - mZ * UNIT_SIZE * exp(mY / PERSPECTIVE));
+    mPlaneX = int(WIDTH / 2 + mX * UNIT_SIZE / mY * PERSPECTIVE);
+    mPlaneY = int(HEIGHT / 2 - mZ * UNIT_SIZE / mY * PERSPECTIVE);
 }
