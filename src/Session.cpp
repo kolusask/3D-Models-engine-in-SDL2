@@ -35,9 +35,9 @@ void Session::run() {
                     break;
                     case SDLK_a: mModel->rotate(COORD_Z, -ROT_ANGLE);
                     break;
-                    case SDLK_q: mModel->rotate(COORD_Y, ROT_ANGLE);
+                    case SDLK_q: mModel->rotate(COORD_Y, -ROT_ANGLE);
                     break;
-                    case SDLK_e: mModel->rotate(COORD_Y, -ROT_ANGLE);
+                    case SDLK_e: mModel->rotate(COORD_Y, ROT_ANGLE);
                     break;
 
                     // Move
